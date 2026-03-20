@@ -1,16 +1,81 @@
-# React + Vite
+# React Concepts Playground
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive React training app built with Vite.  
+This project is designed for trainees to learn concepts through short, hands-on examples with in-depth, lesson-adjacent explanations.
 
-Currently, two official plugins are available:
+## What This Covers
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The self learning app is organized into chapters, each focused on a practical React concept:
 
-## React Compiler
+1. **State & Props**
+   - `useState` basics
+   - passing data via props
+   - lifting state up
+2. **Filter, Map & Reduce**
+   - array transformations used in rendering
+   - `find`, `some`, `every`
+   - method chaining pipelines
+3. **Core Hooks**
+   - `useEffect` lifecycle + cleanup
+   - `useRef` for mutable values and DOM references
+   - `useMemo` / `useCallback` optimization patterns
+   - `useReducer` for structured state transitions
+4. **Context API**
+   - `createContext`, provider, consumer hooks
+   - avoiding prop drilling
+5. **Async Patterns**
+   - Promise chains
+   - `async/await`
+   - callback-to-promise conversion
+6. **Custom Hooks**
+   - extracting reusable stateful logic
+   - `useLocalStorage`, `useFetch`
+7. **Routing**
+   - nested routing
+   - dynamic params
+   - search params
+   - demo-level 404 handling
+8. **Forms & Events**
+   - controlled vs uncontrolled inputs
+   - event-driven updates
+   - client-side validation flow
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Prerequisites
 
-## Expanding the ESLint configuration
+- Node.js 18+ (recommended)
+- npm 9+ (or compatible)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## How To Run
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Then open the local URL shown in terminal (usually `http://localhost:5173`).
+
+## Project Structure
+
+```text
+src/
+  chapters/           # Chapter-wise lesson demos
+  components/         # Shared UI components (layout, sidebar, code block)
+  pages/              # Home and fallback pages
+  App.jsx             # App routing shell
+```
+
+## Learning Flow (Recommended)
+
+- Start at **Chapter 1** and move in order.
+- In each lesson:
+  - read the explanation,
+  - interact with the example,
+  - connect the UI behavior to state/data flow.
+- Use Chapter 7 and 8 to tie concepts together in route and form scenarios.
