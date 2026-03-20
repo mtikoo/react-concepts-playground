@@ -22,6 +22,12 @@ export default function EffectDemo() {
         function clears the interval when the component unmounts or
         <code> running</code> changes.
       </p>
+      <p>
+        This demonstrates the core effect lifecycle: run effect after render,
+        then clean up before rerun/unmount. Always pair subscriptions, timers,
+        or external listeners with cleanup to prevent memory leaks and duplicate
+        background work.
+      </p>
       <div className="demo-area">
         <div className="demo-row">
           <span style={{ fontSize: '1.4rem', fontWeight: 700, minWidth: 60 }}>

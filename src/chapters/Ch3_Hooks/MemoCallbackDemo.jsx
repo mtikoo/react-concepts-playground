@@ -30,6 +30,12 @@ export default function MemoCallbackDemo() {
         stable function reference so the <code>memo</code>-wrapped child
         skips re-renders. Open the console to see render logs.
       </p>
+      <p>
+        This optimization is only valuable when computation or child rendering
+        is expensive. The lesson shows the decision process: identify work that
+        repeats unnecessarily, then stabilize values or callbacks with precise
+        dependencies.
+      </p>
       <div className="demo-area">
         <div>
           Sum of 1..{count} = <strong>{sum.toLocaleString()}</strong>

@@ -21,6 +21,11 @@ export default function ControlledForm() {
         Each input is controlled via <code>value</code> + <code>onChange</code>.
         React owns the state; the DOM reflects it.
       </p>
+      <p>
+        This approach gives you full control for formatting, instant validation,
+        conditional UI, and submit guarding. The trade-off is more state wiring,
+        but for complex forms it is usually the most maintainable pattern.
+      </p>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="ctrl-name">Name</label>

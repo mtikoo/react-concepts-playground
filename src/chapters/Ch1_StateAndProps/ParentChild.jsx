@@ -22,6 +22,11 @@ export default function ParentChild() {
         with a callback (<code>onChange</code>). The child calls the callback
         to update the parent.
       </p>
+      <p>
+        This is called <strong>lifting state up</strong>. When multiple
+        components need the same value, move the state to their nearest common
+        parent so there is one source of truth and no duplicated state.
+      </p>
       <div className="demo-area">
         <ChildInput value={name} onChange={setName} />
         <div>

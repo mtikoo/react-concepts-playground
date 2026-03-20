@@ -7,9 +7,15 @@ export default function Counter() {
     <div className="demo-section">
       <h3>Counter <code>useState</code></h3>
       <p>
-        Basic state management. Click buttons to update the count.
-        The functional updater form <code>prev =&gt; prev + 1</code> is safest
-        when the new state depends on the old.
+        This is the smallest useful state example: one piece of local state
+        (<code>count</code>) and three updates (increment, decrement, reset).
+        Each click triggers a re-render, and React paints the latest state value.
+      </p>
+      <p>
+        Notice the functional updater form
+        (<code>prev =&gt; prev + 1</code>). It is the safest pattern when next
+        state depends on previous state, especially when multiple updates may be
+        queued in the same event cycle.
       </p>
       <div className="demo-area">
         <div className="demo-row">

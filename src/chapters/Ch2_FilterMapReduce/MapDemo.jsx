@@ -18,6 +18,11 @@ export default function MapDemo() {
         the callback. The original array is never mutated. In React, this is
         how you render lists from data.
       </p>
+      <p>
+        Read this example in two steps: first, compute <code>mapped</code> from
+        source data; second, render <code>mapped</code> with JSX. This split
+        keeps rendering declarative and makes transformations easier to debug.
+      </p>
       <div className="demo-area">
         <div className="demo-row">
           <span style={{ fontSize: '0.85rem' }}>Suffix:</span>

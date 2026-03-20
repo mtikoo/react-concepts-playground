@@ -41,6 +41,11 @@ export default function ReducerDemo() {
         Actions: <code>ADD</code>, <code>TOGGLE</code>, <code>DELETE</code>.
         The reducer is a pure function that returns the next state.
       </p>
+      <p>
+        Think of reducer flow as “dispatch an event, compute next state.” This
+        structure scales well when updates become multi-step, and it centralizes
+        state transitions so behavior stays predictable as features grow.
+      </p>
       <div className="demo-area">
         <div className="demo-row">
           <input

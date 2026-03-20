@@ -29,6 +29,12 @@ export default function ReduceDemo() {
         current element to the callback. Returns a single value — a number,
         string, object, or even another array.
       </p>
+      <p>
+        In this lesson, one reducer calculates total cost and another counts
+        quantity. This shows a key idea: once you define an accumulator shape,
+        <code>reduce</code> can summarize any list into exactly the metric your
+        UI needs.
+      </p>
       <div className="demo-area">
         {items.map((item, i) => (
           <div

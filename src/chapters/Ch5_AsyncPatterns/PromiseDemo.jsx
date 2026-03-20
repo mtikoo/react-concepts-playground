@@ -31,6 +31,11 @@ export default function PromiseDemo() {
         Classic promise chain: <code>fetch().then().catch()</code>.
         Manages <code>loading</code> and <code>error</code> state manually.
       </p>
+      <p>
+        Follow the flow line by line: set pending state, parse response only
+        when status is valid, store data, and handle failures in one place. This
+        explicit chain is great for understanding foundational async behavior.
+      </p>
       <div className="demo-area">
         <button onClick={fetchUsers} disabled={loading}>
           {loading ? 'Loading...' : 'Fetch Users (Promise)'}

@@ -41,6 +41,11 @@ export default function UserDetail() {
         Route param <code>id</code> = <strong>{id}</strong> (from <code>useParams</code>).
         The back button uses <code>useNavigate(-1)</code>.
       </p>
+      <p style={{ marginTop: 8, fontSize: '0.8rem', color: 'var(--text-muted)' }}>
+        Dynamic routes let one component render many records based on URL
+        segments. This keeps route definitions compact while still supporting
+        deep-linking to specific resources.
+      </p>
     </div>
   );
 }

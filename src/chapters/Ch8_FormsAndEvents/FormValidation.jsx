@@ -44,6 +44,11 @@ export default function FormValidation() {
         Client-side validation on submit. Errors clear as the user types.
         Try submitting empty or short values.
       </p>
+      <p>
+        The flow is: collect values, validate into an error object, block submit
+        if any rule fails, and show targeted feedback per field. This “errors by
+        field name” shape scales well as forms and rules grow.
+      </p>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="val-user">Username</label>

@@ -12,6 +12,11 @@ function LocalStorageConsumer() {
         Type below -- the value persists in <code>localStorage</code>. Refresh
         the page and it will still be there.
       </p>
+      <p>
+        The component code stays simple because serialization and persistence are
+        hidden in the hook. This is the core custom-hook benefit: reusable logic
+        with a clean, familiar state-like API.
+      </p>
       <div className="demo-area">
         <input
           value={name}
@@ -39,6 +44,11 @@ function FetchConsumer() {
       <p>
         Returns <code>{'{ data, loading, error }'}</code>. Automatically aborts
         on unmount or URL change.
+      </p>
+      <p>
+        This pattern centralizes request lifecycle concerns in one place, so UI
+        components only decide what to render for loading, error, or success.
+        That keeps fetch behavior consistent across the app.
       </p>
       <div className="demo-area">
         {loading && <div className="loading">Loading todos...</div>}

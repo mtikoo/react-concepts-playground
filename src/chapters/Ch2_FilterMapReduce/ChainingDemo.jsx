@@ -34,6 +34,11 @@ export default function ChainingDemo() {
         all return arrays, you can chain them into a readable pipeline.
         Add <code>reduce</code> at the end to aggregate.
       </p>
+      <p>
+        This is the pattern you will use often in dashboards: narrow the data,
+        reshape each item, order it for display, then compute summary metrics.
+        Chaining keeps this workflow linear and easier to scan.
+      </p>
       <div className="demo-area">
         <div className="demo-row">
           <span style={{ fontSize: '0.85rem' }}>Department:</span>

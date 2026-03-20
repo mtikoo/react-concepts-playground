@@ -28,6 +28,11 @@ export default function FindSomeEveryDemo() {
         <strong>at least one</strong> element matches. <code>every</code> returns{' '}
         <code>true</code> only if <strong>all</strong> match.
       </p>
+      <p>
+        Use these methods when you need quick checks rather than full list
+        transformations. They read like business rules: “find this user,”
+        “does any admin exist,” and “are all users active.”
+      </p>
       <div className="demo-area">
         <div className="demo-row">
           <label style={{ fontSize: '0.85rem' }}>Find user by ID:</label>

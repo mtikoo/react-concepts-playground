@@ -21,6 +21,11 @@ export default function RefDemo() {
         (2) <code>prevValueRef</code> tracks the previous value across renders
         without causing a re-render.
       </p>
+      <p>
+        A ref is like a persistent box whose value survives re-renders. Update
+        refs for mutable data you want to remember but do not want to display as
+        render-driving state.
+      </p>
       <div className="demo-area">
         <input
           ref={inputRef}

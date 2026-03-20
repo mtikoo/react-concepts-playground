@@ -30,6 +30,12 @@ export default function FilterDemo() {
         callback returns <code>true</code>. Great for search, filtering lists,
         and removing items.
       </p>
+      <p>
+        The callback is just decision logic. Returning <code>false</code> drops
+        an item from the result, returning <code>true</code> keeps it. Combining
+        small conditions, like price and stock status here, mirrors real product
+        filtering UIs.
+      </p>
       <div className="demo-area">
         <div className="demo-row">
           <label style={{ fontSize: '0.85rem' }}>

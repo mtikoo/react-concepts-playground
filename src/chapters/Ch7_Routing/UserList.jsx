@@ -23,6 +23,11 @@ export default function UserList() {
         Uses <code>useSearchParams</code> for filtering. Click a user to
         navigate with <code>useParams</code>.
       </p>
+      <p style={{ fontSize: '0.84rem', color: 'var(--text-muted)', marginBottom: 12 }}>
+        Notice how filter state is written into the URL query string. This means
+        your current view can be copied, refreshed, and shared without losing
+        state.
+      </p>
       <div className="demo-row" style={{ marginBottom: 16 }}>
         <span style={{ fontSize: '0.85rem' }}>Filter:</span>
         <button

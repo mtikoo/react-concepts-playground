@@ -64,6 +64,12 @@ export default function CallbackDemo() {
         shows how to wrap it in a Promise so you can <code>await</code> it.
         Try setting ID to 0 to trigger the error path.
       </p>
+      <p>
+        Many legacy libraries still expose callback APIs. Promisifying them is a
+        practical migration strategy that lets modern React code use
+        <code> async/await</code> consistently without rewriting the original
+        source API.
+      </p>
       <div className="demo-area">
         <div className="demo-row">
           <input

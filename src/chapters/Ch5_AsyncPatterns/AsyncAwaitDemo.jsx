@@ -43,6 +43,12 @@ export default function AsyncAwaitDemo() {
         <code> try/catch</code>. Uses an <code>AbortController</code> to
         cancel in-flight requests on unmount or re-fetch.
       </p>
+      <p>
+        This structure reads top-to-bottom like synchronous code, which makes it
+        easier to maintain. The <code>finally</code> block guarantees loading is
+        reset, and abort handling prevents outdated requests from overwriting the
+        current UI state.
+      </p>
       <div className="demo-area">
         <button onClick={fetchPosts} disabled={loading}>
           {loading ? 'Loading...' : 'Fetch Posts (async/await)'}

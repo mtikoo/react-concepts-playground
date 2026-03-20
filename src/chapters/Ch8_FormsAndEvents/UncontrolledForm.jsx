@@ -20,6 +20,11 @@ export default function UncontrolledForm() {
         Uses <code>useRef</code> to read values on submit instead of tracking
         every keystroke. The DOM owns the state.
       </p>
+      <p>
+        Uncontrolled inputs are useful for lightweight forms or quick
+        integrations. Because React does not track each keystroke, this can be
+        simpler, but it offers less real-time control than controlled inputs.
+      </p>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="unctrl-name">Name</label>
