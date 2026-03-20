@@ -3,10 +3,10 @@
 An interactive React training app built with Vite.  
 This project is designed for trainees to learn concepts through short, hands-on examples with in-depth, lesson-adjacent explanations.
 
-## What This Covers
-
 <img width="1186" height="937" alt="Screenshot 2026-03-20 at 4 53 31 PM" src="https://github.com/user-attachments/assets/e360d5ca-00bf-44e0-8648-cc679b5715a7" />
 
+
+## What This Covers
 
 The self learning app is organized into chapters, each focused on a practical React concept:
 
